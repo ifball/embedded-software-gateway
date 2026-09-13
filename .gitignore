@@ -1,0 +1,5 @@
+build/
+*.log
+test_log.md
+.vs/
+.vscode/
