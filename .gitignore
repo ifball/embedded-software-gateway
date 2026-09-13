@@ -3,3 +3,7 @@ build/
 test_log.md
 .vs/
 .vscode/
+
+# Personal interview / resume prep - do not commit
+docs/interview_qa.md
+docs/resume_delivery_checklist.md
