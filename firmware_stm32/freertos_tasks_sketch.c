@@ -2,8 +2,8 @@
  * STM32 + FreeRTOS migration sketch.
  *
  * Put this structure into your CubeMX project after UART, DMA, ADC/PWM
- * and FreeRTOS are enabled. Names are intentionally close to interview
- * language: SensorTask, ParserTask, ControlTask, CommTask, ReportTask.
+ * and FreeRTOS are enabled. Task names follow common embedded patterns:
+ * SensorTask, ParserTask, ControlTask, CommTask, ReportTask.
  */
 
 #include "protocol_port.h"

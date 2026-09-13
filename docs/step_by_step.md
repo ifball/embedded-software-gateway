@@ -20,7 +20,7 @@ endpoint and returns the device response.
 Build:
 
 ```powershell
-cd C:\Users\20934\Desktop\embedded_software_gateway_project
+cd embedded_software_gateway_project
 cmake -S . -B build
 cmake --build build --config Release
 ```
@@ -173,7 +173,7 @@ Read:
 device_sim/main.cpp
 ```
 
-This is not the main resume point. It is a controllable endpoint for testing
+This is not the main focus. It is a controllable endpoint for testing
 the gateway without buying hardware.
 
 It simulates:
@@ -235,7 +235,7 @@ Binary payloads are smaller, clearer and closer to real embedded protocols.
 ## Stage 8: Add Software Engineering Evidence
 
 The project already includes protocol tests. You should still add a real run
-log before resume delivery:
+log to verify everything works:
 
 ```text
 test_log.md

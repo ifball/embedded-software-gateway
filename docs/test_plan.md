@@ -1,7 +1,6 @@
 # Test Plan
 
-Record test results in README or `test_log.md` before using the project in a
-resume.
+Record test results in README or `test_log.md` before sharing the project.
 
 ## Functional Tests
 

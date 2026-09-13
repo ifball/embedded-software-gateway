@@ -180,7 +180,7 @@ int main(int argc, char** argv) {
                     response.payload = proto::text_payload("error_count=0");
                     break;
                 case proto::Command::GetVersion:
-                    response.payload = proto::text_payload("version=1.0.0;build=interview");
+                    response.payload = proto::text_payload("version=1.0.0;build=release");
                     break;
                 default:
                     error_count++;

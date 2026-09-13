@@ -4,9 +4,9 @@ Chinese project name:
 
 > 基于 C/C++ 的嵌入式 Linux 设备通信网关
 
-This project is aimed at embedded software engineer internship applications.
-It focuses on embedded Linux application-layer development, protocol parsing,
-byte-stream buffering, gateway forwarding, error handling and testability.
+This project focuses on embedded Linux application-layer development, protocol
+parsing, byte-stream buffering, gateway forwarding, error handling and
+testability.
 
 The desktop demo runs this chain:
 
@@ -43,9 +43,9 @@ It proves:
 - Gateway statistics: total/success/failed/timeout/average latency
 - Timeout and error-path handling
 - Protocol tests for round-trip, sticky packet, partial packet and checksum failure
-- Clear README, test plan and interview explanation
+- Clear README and test plan
 
-Optional hardware migration is only an extension. The resume core is:
+Optional hardware migration is only an extension. The core is:
 
 ```text
 embedded Linux gateway + protocol parser + device communication backend
@@ -92,10 +92,7 @@ firmware_stm32/
 
 docs/
   step_by_step.md          rebuild guide
-  embedded_software_focus.md
-  interview_qa.md
   test_plan.md
-  resume_delivery_checklist.md
 ```
 
 ## Protocol
@@ -137,7 +134,7 @@ That keeps the same engineering idea while avoiding a hardware-heavy story.
 Windows:
 
 ```powershell
-cd C:\Users\20934\Desktop\embedded_software_gateway_project
+cd embedded_software_gateway_project
 cmake -S . -B build
 cmake --build build --config Release
 .\build\Release\protocol_tests.exe
@@ -193,8 +190,7 @@ quit
 
 ## How To Make It Yours
 
-This version already includes the minimum enhancements that make it interview
-ready as a project base:
+This version includes:
 
 - `GET_VERSION` command
 - binary one-byte payload for `SET_PWM`
@@ -203,23 +199,5 @@ ready as a project base:
 - protocol tests
 - device transport abstraction note
 
-Before submitting it as your own resume project, run it locally and write your
-own `test_log.md` with real output from your machine.
-
-## Resume Bullet
-
-```text
-基于 C/C++ 实现嵌入式 Linux 设备通信网关，支持 TCP 命令接入、自定义二进制协议封装、
-RingBuffer 字节流解析、设备状态查询、控制命令转发、二进制 payload、校验失败处理、
-超时错误统计、响应耗时统计和协议单元测试。
-```
-
-## Interview Positioning
-
-Do not introduce this project as a hardware project. Introduce it like this:
-
-```text
-这是一个偏嵌入式 Linux 应用层的软件项目。我重点做的是网关程序、协议帧设计、
-RingBuffer 字节流解析、命令分发、异常处理和测试记录。设备端目前用模拟器，
-后续可以替换成串口设备或 RTOS 终端。
-```
+Run it locally and write your own `test_log.md` with real output from your
+machine.
