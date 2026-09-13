@@ -3,8 +3,3 @@ build/
 test_log.md
 .vs/
 .vscode/
-
-# Local-only documents
-docs/interview_qa.md
-docs/resume_delivery_checklist.md
-docs/embedded_software_focus.md
